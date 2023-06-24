@@ -5,9 +5,24 @@ description = "Send Programme Notifications to Discord Webhooks for EuroPython 2
 authors = ["Sebastiaan Zeeff <sebastiaan@europython.eu>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "programme_notifier", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+flake8-docstrings = "^1.7.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core"]

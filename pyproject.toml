@@ -21,6 +21,7 @@ mypy = "^1.4.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
+coverage = {extras = ["toml"], version = "^7.2.7"}
 
 [tool.isort]
 profile = "black"
@@ -34,6 +35,12 @@ disallow_incomplete_defs = true
 check_untyped_defs = true
 disallow_untyped_decorators = true
 
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+fail_under = 100
 
 [build-system]
 requires = ["poetry-core"]

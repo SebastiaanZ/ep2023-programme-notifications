@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "ep2023-programme-notifications"
+version = "0.1.0"
+description = "Send Programme Notifications to Discord Webhooks for EuroPython 2023"
+authors = ["Sebastiaan Zeeff <sebastiaan@europython.eu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

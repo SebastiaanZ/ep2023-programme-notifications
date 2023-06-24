@@ -11,6 +11,9 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
+attrs = "^23.1.0"
+arrow = "^1.2.3"
+tzdata = "^2023.3"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
